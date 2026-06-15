@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCG Universe | O Mundo dos Card Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <div class="logo">TCG <span>Universe</span></div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#destaques">Cartas</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Colecione, Jogue e Domine!</h1>
+            <p>Explore o universo dos melhores Trading Card Games do mundo. Monte seu deck e prepare-se para o duelo.</p>
+            <a href="#simulador" class="btn">Abrir um Booster</a>
+        </div>
+    </section>
+
+    <section id="destaques" class="cards-section">
+        <h2>Cartas em Destaque</h2>
+        <div class="cards-grid">
+            <div class="card-item fire">
+                <h3>Dragão de Fogo</h3>
+                <p class="type">Tipo: Dragão / Elemento</p>
+                <p class="desc">Causa dano massivo de chamas a todos os inimigos em campo.</p>
+            </div>
+            <div class="card-item water">
+                <h3>Maga da Água</h3>
+                <p class="type">Tipo: Mago / Suporte</p>
+                <p class="desc">Cria uma barreira mística e cura os pontos de vida do aliado.</p>
+            </div>
+            <div class="card-item shadow">
+                <h3>Cavaleiro Sombrio</h3>
+                <p class="type">Tipo: Guerreiro / Trevas</p>
+                <p class="desc">Aumenta seu poder de ataque para cada carta no cemitério.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="simulator-section">
+        <h2>Simulador de Booster</h2>
+        <p>Clique no botão para tirar uma carta aleatória da nossa coleção mística!</p>
+        
+        <div class="booster-container">
+            <button id="draw-btn" class="btn">Sortear Carta</button>
+            <div id="result-card" class="drawn-card hidden">
+                <h3 id="card-name">Nome da Carta</h3>
+                <p id="card-type" class="type">Tipo</p>
+                <p id="card-desc">Descrição</p>
+                <span id="card-rarity" class="rarity">Raridade</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 TCG Universe. Feito para verdadeiros duelistas.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
